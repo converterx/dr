@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConverterX DNA and RNA Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>DNA and RNA Converter</h1>
+  <textarea id="dnaInput" placeholder="Enter DNA sequence here... (ex: ATGCTACG)"></textarea>
+  <br>
+  <button onclick="convertToRNA()">Convert to RNA</button>
+  <button onclick="convertToAminoAcid()">Convert to Amino Asit</button>
+
+  <div class="output" id="output">
+    <h3>Result:</h3>
+    <pre id="result">The translation will be displayed here.</pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
