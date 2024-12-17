@@ -20,7 +20,7 @@ const codonTable = {
 function convertToRNA() {
   const dna = document.getElementById("dnaInput").value.toUpperCase();
   const rna = dna.replace(/T/g, "U");
-  document.getElementById("result").innerText = `RNA Dizisi: ${rna}`;
+  document.getElementById("result").innerText = `RNA Sequence: ${rna}`;
 }
 
 function convertToAminoAcid() {
@@ -31,5 +31,5 @@ function convertToAminoAcid() {
     const codon = rna.substr(i, 3);
     aminoAcids += codonTable[codon] ? codonTable[codon] + " " : "";
   }
-  document.getElementById("result").innerText = `Amino Asit Dizisi: ${aminoAcids.trim()}`;
+  document.getElementById("result").innerText = `Amino Asit Sequence: ${aminoAcids.trim()}`;
 }
